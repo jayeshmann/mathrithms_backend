@@ -24,13 +24,15 @@ yarn
 
 ### Endpoints
 
+`GET` only.
+
 - `/` - responds with `Nothing to see here!` and status `200 OK`
 - `/users` - list of all users
 - `/users/:id` - single user, eg. `users/1` returns details of user with id 1 if users exists, `status 404` otherwise
 
 ### Dev run
 
-Add users data in same format to `data.json` file.
+Add users data in same format to `users` in `index.js` file.
 
 Run the backend
 
