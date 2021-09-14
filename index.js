@@ -74,7 +74,7 @@ app.get('/users', (_request, response) => {
 
 app.get('/users/:id', (request, response) => {
   const id = Number(request.params.id);
-  const user = users.find((usr) => usr.id === id);
+  const user = users.find((u) => u.id === id);
 
   if (user) {
     response.json(user);
